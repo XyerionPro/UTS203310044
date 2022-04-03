@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    tools:context=".MainActivity">
+<!--diatas merupakan bagian yang membuat sebuah constraint layout atau tata letak aplikasi-->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="430dp"
+        android:layout_height="835dp"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+<!--        disini merupakan bagian yang digunakan untuk menjalankan linier layout sebuah program-->
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harjito NEWS"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="40dp" />
+<!--disini merupakan bagian text view yang menampilkan judul-->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/berita1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtberita1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:text="Hidroponik"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Hidroponik adalah salah satu metode dalam budidaya menanam dengan memanfaatkan air tanpa menggunakan.."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="#999999" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+<!--diatas merupakan bagian yang bersifat membuat bagian cardview atau kerangka system yang bersifat pengembangan-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:visibility="visible">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/berita2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtberita2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="Apa Itu Gays??"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="Jika kita terlalu khawatir akan hari esok, maka tidak ada hari ini untuk disyukuri."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#999999" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/berita6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/berita3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="Taukah Anda?"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="Seperti yang kita ketahui, Coca Cola hampir bisa ditemukan di mana saja di seluruh dunia."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#999999" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+<!--diatas adalah bagian yang berupa linier yang bersifat terbuka atau bersystem yang sama namun mendukung layar belah-->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardLotusTemple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/berita4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:text="Ogiwara Sayu"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Gadis SMA ini bernama Sayu dan merupakan orang Hokkaido.."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="#999999" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:visibility="visible">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardTajMahal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:checkable="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="3dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/berita5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="15dp"
+                                android:text="Apa Itu Gays??"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:textColor="#000" />
+
+                            <ImageView
+                                android:id="@+id/imageView6"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                app:srcCompat="@mipmap/sayuuu" />
+
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/berita7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:checkable="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="3dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/topik2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="15dp"
+                                android:text="Mie Ayam"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:textColor="#000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginBottom="15dp"
+                                android:text="Mi ayam, mie ayam atau bakmi ayam adalah hidangan Indonesia yang terbuat .dari mie gandum kuning yang dibumbui dengan daging ayam yang biasanya dipotong dadu"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="#999999" />
+
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/btnWhatsSelected"
+                android:layout_width="162dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:minHeight="48dp"
+                android:text="Berikan Rating"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="207dp"
+                android:layout_height="61dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:text="Anda Menyukai Ini ?" />
+            />
+        </LinearLayout>
+<!--dan kali ini saya menjelaskan bagian yang bersifat sama namun memiliki gambaran berbeda pada sebuah system yang ada-->
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
